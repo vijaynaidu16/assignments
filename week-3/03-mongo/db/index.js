@@ -6,10 +6,17 @@ mongoose.connect('your-mongodb-url');
 // Define schemas
 const AdminSchema = new mongoose.Schema({
     // Schema definition here
+    usernname : String,
+    password: String
 });
 
 const UserSchema = new mongoose.Schema({
     // Schema definition here
+    usernname : String,
+    password: String,
+    purchasedCourses: [{
+        type: mongoose.
+    }]
 });
 
 const CourseSchema = new mongoose.Schema({
