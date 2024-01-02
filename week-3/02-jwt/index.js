@@ -23,7 +23,7 @@ function signJwt(username, password) {
     return null;
   }
   const signature = jwt.sign({ username }, password);
-  return signature;
+  return signature; 
 }
 
 /**
